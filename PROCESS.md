@@ -15,7 +15,7 @@ them, and how they affect the others.
 
 
 ```
-Assessment
+Discovery
   |- get information about the problem we are trying to solve
   |- communicate information about the problem we are trying to solve
 Design
@@ -23,21 +23,33 @@ Design
 Develop
   |- write code for the component
   |- verify the code works
-Release
+Document
+  |- Document the design
+  |- Documemt the code
+Publish and Release
   |- run pre release actions
+  |- update the website
   |- distribute the product
 ```
 
-## Assessment
+## Discovery
 
 #### Get Information About The Problem We Are Trying To Solve
 
 Tasks:
 
-- get information
-- analyze information
+- gather requirements across projects/stakeholders
+- analyze requirements
+- review requirements with stakeholders
 - decipher relevant information
 - clearly communicate the problem
+
+Definition of Done:
+- Feature is consistent with PatternFly goals
+- Feature is relevant to PatternFly stakeholders
+- Scope, cost, and priority are understood
+- A decision has been made to move forward or decline this feature
+
 
 Concerns:
 
@@ -47,7 +59,7 @@ Concerns:
 
 Deliverables:
 
-- TBA
+- Requirements document
 
 ## Design
 
@@ -55,18 +67,24 @@ Deliverables:
 
 Tasks:
 
-- create visual representation of a proposed solution
+- create visual representation (mockups) of a proposed solution
 - communicate the visual representation
-- breaking modularization rules
+
+Definition of Done:
+
+- Design solves the problem that was identified in the requirements
+- Design has been reviewed and approved by stakeholders
+- Design has been reviewed by developer(s) for feasibility and modularity
 
 Concerns:
 
-- inconsistent implementations
+- inconsistency with current features or product needs
 - breaking modularization rules
+- Does not leverage/reuse existing assets to the greatest extent possible
 
 Deliverables:
 
-- TBA
+- Design mockups (wireframes and/or hi-res visualizations)
 
 ## Develop
 
@@ -76,8 +94,13 @@ Tasks:
 
 - write the code
 - write the automated tests
-- write the documentation
 - contribute code to project
+
+Definition of Done:
+
+- Code have been reviewed
+- All automated tests pass
+- Behavior and appearance are reviewed by designer(s).
 
 Concerns:
 
@@ -89,6 +112,46 @@ Concerns:
 
 Deliverables:
 
-- TBA
+- Code and related documentation
 
-## Release
+## Document
+
+Tasks: 
+
+- Write the design documentation (Markdown files) for web site
+- Write the code documentation and specs
+
+Definition of Done:
+- documentation is complete
+- editorial standards have been followed
+
+Concerns:
+
+- Design documentation and code behavior is inconsistent
+- Documentation does not meet standards or is inconsistent with other documentation
+
+Deliverables:
+
+- Markdown files
+- Others?
+
+## Publish and Release
+
+Tasks:
+
+- Website has been updated
+- Release (?) has been built/updated
+- Changes and additions are communicated
+
+Definition of Done:
+
+- New feature is available through both the website and GitHub repo
+- New feature is communicated to PatternFly community (as applicable)
+
+Concerns:
+
+- New feature breaks the build or website
+
+Deliverables:
+
+- Release notes and/or outward communication (e.g. blog post or other)
